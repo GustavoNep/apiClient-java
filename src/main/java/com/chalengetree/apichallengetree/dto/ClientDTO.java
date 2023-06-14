@@ -11,6 +11,7 @@ public class ClientDTO {
     private String name;
     @NotBlank(message = "Required field")
     private String cpf;
+    @Positive(message = "Income must be positive")
     private Double income;
     @PastOrPresent(message = "Invalid birth date")
     private LocalDate birthDate;
